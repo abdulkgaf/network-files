@@ -34,6 +34,9 @@ This lab demonstrates network file sharing configuration and management in a Win
 - Password: [Your configured password]
 
 #### 3. On DC-1, on the C:\ drive, create 4 folders: "read-access", "write-access", "no-access", "accounting"
+
+![Screenshot 2025-05-28 150935](https://github.com/user-attachments/assets/15424357-36d8-4334-a11c-4d06d052b6a6)
+
 On DC-1:
 1. Open **File Explorer**
 2. Navigate to **C:\** drive
@@ -44,6 +47,8 @@ On DC-1:
    - Right-click → **New** → **Folder** → Name: `accounting`
 
 #### 4. Set the following permissions (share the folder)
+
+![Screenshot 2025-05-28 151023](https://github.com/user-attachments/assets/d4a258c3-bf30-434b-aceb-4350e9061ed6)
 
 ##### Folder: "read-access", Group: "Domain Users", Permission: "Read"
 1. Right-click **read-access** folder → **Properties**
@@ -75,6 +80,7 @@ On DC-1:
 ##### (Skip accounting for now)
 
 ---
+![Screenshot 2025-05-28 151101](https://github.com/user-attachments/assets/ba7a563f-fc3b-4bb4-8d95-47f6561e7259)
 
 ## Attempt to access file shares as a normal user
 
@@ -117,6 +123,8 @@ On DC-1:
    - **Group scope**: **Global**
    - **Group type**: **Security**
 5. Click **OK**
+
+![Screenshot 2025-05-28 151144](https://github.com/user-attachments/assets/577d91f0-6967-4228-8de7-217fff5e7513)
 
 #### 2. On the "accounting" folder you created earlier, set the following permissions:
 
